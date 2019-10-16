@@ -9,39 +9,39 @@
 </head>
 <body>
     <header>
-        <form>
-         <div class="floating-label">
-            <input type="text" id="toDoTitle" name="toDoTitle" placeholder=" ">
-            <label for="toDoTitle">Task</label>
-           </div>
-          <button>Add task</button>
-        </form>
-      </header>
-      <main>
-        <h1>the Task Master!</h1>
-        <section id="doing">
-          <h2>Doing</h2>
-          <!--template doing start-->
-          <article>
-            
-            <h3 id="title">Task name</h3>
-            <input type="text" name="editField" class="hide">
-            <button data-label="edit">EDIT TASK</button>
-            <label data-label="doneBtn">
-            <input type="checkbox" data-label="done">DONE</label>
-          </article><!--template done-->
-        </section>
-        <section id="done">
-          <h2>Have-dones</h2>
-          <!--template done start-->
-            <article>
-              <h3>Task name</h3>
-              <label data-label="doneBtn">
-              <input type="checkbox" data-label="done" checked>UNDONE</label>
-              <button data-label="delete">DELETE</button>
-          </article><!--template done-->
-        </section>
-      </main>
+  <form>
+   <div class="floating-label">
+      <input type="text" id="toDoTitle" name="toDoTitle" placeholder=" ">
+      <label for="toDoTitle">Task</label>
+     </div>
+    <button>Add task</button>
+  </form>
+</header>
+<main>
+  <h1>the Task Master!</h1>
+  <section id="doing">
+    <h2>Doing</h2>
+    <!--template doing start-->
+    <article>
+      
+      <h3 id="title">Task name</h3>
+      <input type="text" name="editField" class="hide">
+      <button data-label="edit">EDIT TASK</button>
+      <label data-label="doneBtn">
+      <input type="checkbox" data-label="done">DONE</label>
+    </article><!--template done-->
+  </section>
+  <section id="done">
+    <h2>Have-dones</h2>
+    <!--template done start-->
+      <article>
+        <h3>Task name</h3>
+        <label data-label="doneBtn">
+        <input type="checkbox" data-label="done" checked>UNDONE</label>
+        <button data-label="delete">DELETE</button>
+    </article><!--template done-->
+  </section>
+</main>
     <script src="index.js"></script>
 </body>
 </html>

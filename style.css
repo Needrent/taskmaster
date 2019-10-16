@@ -1,0 +1,95 @@
+*{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background: var(--background-color);
+    font-family: sans-serif;
+  }
+  :root{
+    --line-height: 1.6rem;
+    --font-size: 1.6rem;
+    --background-color: white;
+  }
+  label,
+  button{
+    cursor: pointer;
+  }
+  form{  
+    display: grid;
+    margin-top: 5rem;
+    justify-content: center;  
+    align-items: center;
+  }
+  h2{
+    font-size: calc(var(--font-size) * 1.10);
+    margin: 0 0 0.5rem 0;
+  }
+  h3{
+    font-size: calc(var(--font-size) * 1.5);
+  }
+  .floating-label{
+    position: relative;
+  }
+  form input{
+    padding: 0.3rem;
+    position: relative;
+    width: 100%;
+    line-height: var(--line-height);
+    font-size: var(--font-size);
+  }
+  form label{
+    position: absolute;
+    line-height: var(--line-height);
+    font-size: calc(var(--font-size) * 0.80);
+    top: 20%;
+    left: 0.3rem;
+    z-index: 1;
+    padding: 0 0.3rem 0 0.3rem;
+    transition: 0.1s;
+    cursor: text;
+  }
+  form input:not(:placeholder-shown) + label{
+    top: -1rem;
+    background: var(--background-color);
+  }
+  main{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  1fr;
+    text-align:center
+  }
+  main h1{
+    grid-column: 1/-1;
+    text-align: center;
+    font-size: calc(var(--font-size) * 2);
+    margin: 2rem 0 1rem 0;
+  }
+  main section article{
+    margin: 0 0 3rem 0;
+  }
+  section input[type="checkbox"]{
+    display: none;
+  }
+  section label,
+  section button{
+    border: none;
+    border-radius: 0.5rem;
+    margin: 0rem;
+    padding: 0.5rem;
+    background: green;
+    font-weight: bold;
+    color: var(--background-color);
+  }
+  .hide{
+    display: none;
+  }
+  @media (min-width: 768px){
+    main{
+    width: 65%;
+    grid-template-columns: repeat(2, 1fr);
+    }
+  }
